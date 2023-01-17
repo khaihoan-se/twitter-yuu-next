@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+
+/* Theme code varib */
+.theme-light {
+   --shadow-color: theme('boxShadow.white-shadow-dark');
+  /* --------------Text--------------- */
+  --text-main: rgb(15, 20, 25);
+  --text-extra: rgb(83, 100, 113);
+  --text-reverse: rgb(255, 255, 255);
+  /* --------------Background--------------- */
+  --bg-main-900: rgb(255, 255, 255); /* Main */
+  --bg-main-800: rgba(15, 20, 25, 0.1); /* Hover Header */
+  --bg-main-700: rgb(239, 243, 244); /* Input */
+  --bg-main-600:rgb(247, 249, 249); /* Trend */
+  --bg-main-500: rgba(0, 0, 0, 0.04); /* Bg Modal Login */
+  --bg-main-400: rgba(0, 0, 0, 0.03); /* Hover Trend */
+  --bg-reverse: rgb(15, 20, 25); /* Button Flow*/
+  --bg-reverse-extra: rgb(39, 44, 48); /* Button Hover Flow*/
+  --bg-logo-reverse: theme('colors.tw-main-color-large');
+  /* --------------Border--------------- */
+  --bd-layout: rgb(239, 243, 244);
+  --bd-button-medium: rgb(207, 217, 222);
+  --bd-button-small: rgba(255, 255, 255, 0.35);
+}
+.theme-dark {
+   --shadow-color: theme('boxShadow.dark-shadow-dark');
+   /* --------------Text--------------- */
+   --text-main: rgb(231, 233, 234);
+   --text-extra: rgb(113, 118, 123);
+   --text-reverse: rgb(15, 20, 25);
+   /* --------------Background--------------- */
+   --bg-main-900: rgb(0, 0, 0); /* Main */
+   --bg-main-800: rgba(231, 233, 234, 0.1); /* Hover Header */
+   --bg-main-700: rgb(32, 35, 39); /* Input */
+   --bg-main-600:rgb(22, 24, 28); /* Trend */
+   --bg-main-500: rgba(91, 112, 131, 0.4); /* Bg Modal Login */
+   --bg-main-400: rgba(255, 255, 255, 0.03); /* Hover Trend */
+   --bg-reverse: rgb(239, 243, 244); /* Button Flow*/
+   --bg-reverse-extra: rgb(215, 219, 220); /* Button Hover Flow*/
+   --bg-logo-reverse: theme('colors.tw-main-color-large');
+   /* --------------Border--------------- */
+   --bd-layout: rgb(47, 51, 54);
+   --bd-button-medium: rgb(83, 100, 113);
+   --bd-button-small: rgba(255, 255, 255, 0.35);
+}
+.theme-blue {  
+   --main-color-large: rgb(29, 155, 240);
+   --main-color-medium: rgb(26, 140, 216);
+   --main-color-small: rgba(29, 155, 240, 0.1);
+}
+.theme-yellow {
+   --main-color-large: rgb(255, 212, 0);
+   --main-color-medium: rgb(230, 191, 0);
+   --main-color-small: rgba(255, 212, 0, 0.1);
+}
+.theme-pink {
+   --main-color-large: rgb(249, 24, 128);
+   --main-color-medium: rgb(224, 22, 115);
+   --main-color-small: rgba(249, 24, 128, 0.1);
+}
+.theme-violet {
+   --main-color-large: rgb(120, 86, 255);
+   --main-color-medium: rgb(108, 77, 230);
+   --main-color-small: rgba(120, 86, 255, 0.1);
+}
+.theme-orange {
+   --main-color-large: rgb(255, 122, 0);
+   --main-color-medium: rgb(230, 110, 0);
+   --main-color-small: rgba(255, 122, 0, 0.1);
+}
+.theme-green {
+   --main-color-large: rgb(0, 186, 124);
+   --main-color-medium: rgb(0, 167, 112);
+   --main-color-small: rgba(0, 186, 124, 0.1);
+}
+
+html, body {
+   @apply bg-tw-bg-main-900 text-tw-text-main;
+}
+/* Your own custom component styles */
+
+@tailwind utilities;
