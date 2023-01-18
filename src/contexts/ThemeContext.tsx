@@ -4,7 +4,7 @@ import { createContext, useContext } from "react";
 
 export interface ThemeContextType {
    dataTheme: DataThemeType;
-   onChangeTheme: (data: any) => void;
+   onChangeTheme: (data: ParamsType) => void;
 }
 interface ThemeContextProviderType {
    children: React.ReactNode;
@@ -25,7 +25,7 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderType> = ({
       themeSize: "theme-small",
    });
 
-   const onChangeTheme = (data: any) => {
+   const onChangeTheme = (data: ParamsType) => {
       setDataTheme((prev) => ({ ...prev, ...data }));
    };
 
