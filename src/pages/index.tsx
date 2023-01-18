@@ -20,7 +20,10 @@ const LoginPage = () => {
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, [
+         "common",
+         "modal_custom_theme",
+      ])),
    },
 });
 

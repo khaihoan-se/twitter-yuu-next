@@ -36,6 +36,7 @@ module.exports = {
             "tw-main-color-large": "var(--main-color-large)",
             "tw-main-color-medium": "var(--main-color-medium)",
             "tw-main-color-small": "var(--main-color-small)",
+            "tw-main-color-select": "var(--main-color-select)",
          },
          boxShadow: {
             "white-shadow-dark":

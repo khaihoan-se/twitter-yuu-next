@@ -13,7 +13,7 @@
   --bg-main-800: rgba(15, 20, 25, 0.1); /* Hover Header */
   --bg-main-700: rgb(239, 243, 244); /* Input */
   --bg-main-600:rgb(247, 249, 249); /* Trend */
-  --bg-main-500: rgba(0, 0, 0, 0.04); /* Bg Modal Login */
+  --bg-main-500: rgba(0, 0, 0, 0.4); /* Bg Modal Login */
   --bg-main-400: rgba(0, 0, 0, 0.03); /* Hover Trend */
   --bg-reverse: rgb(15, 20, 25); /* Button Flow*/
   --bg-reverse-extra: rgb(39, 44, 48); /* Button Hover Flow*/
@@ -48,6 +48,7 @@
    --main-color-large: rgb(29, 155, 240);
    --main-color-medium: rgb(26, 140, 216);
    --main-color-small: rgba(29, 155, 240, 0.1);
+   --main-color-select: rgb(142, 205, 248);
 }
 .theme-yellow {
    --main-color-large: rgb(255, 212, 0);
@@ -74,7 +75,22 @@
    --main-color-medium: rgb(0, 167, 112);
    --main-color-small: rgba(0, 186, 124, 0.1);
 }
-
+/* 🚁 Reset Css 🚁 */
+svg {
+   @apply fill-current;
+   /* color: #1d9bf01a */
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+a, button, input {
+   @apply outline-none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
 html, body {
    @apply bg-tw-bg-main-900 text-tw-text-main;
 }
