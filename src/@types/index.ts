@@ -1,5 +1,5 @@
 export interface DataThemeType {
-   themeMain: string;
+   themeBackground: string;
    themeColor: string;
    themeSize: string;
 }

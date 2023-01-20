@@ -54,26 +54,32 @@
    --main-color-large: rgb(255, 212, 0);
    --main-color-medium: rgb(230, 191, 0);
    --main-color-small: rgba(255, 212, 0, 0.1);
+   --main-color-select: rgb(255, 234, 128);
 }
 .theme-pink {
    --main-color-large: rgb(249, 24, 128);
    --main-color-medium: rgb(224, 22, 115);
    --main-color-small: rgba(249, 24, 128, 0.1);
+   --main-color-select: rgb(252, 140, 192);
+
 }
 .theme-violet {
    --main-color-large: rgb(120, 86, 255);
    --main-color-medium: rgb(108, 77, 230);
    --main-color-small: rgba(120, 86, 255, 0.1);
+   --main-color-select: rgb(188, 171, 255);
 }
 .theme-orange {
    --main-color-large: rgb(255, 122, 0);
    --main-color-medium: rgb(230, 110, 0);
    --main-color-small: rgba(255, 122, 0, 0.1);
+   --main-color-select: rgb(255, 189, 128);
 }
 .theme-green {
    --main-color-large: rgb(0, 186, 124);
    --main-color-medium: rgb(0, 167, 112);
    --main-color-small: rgba(0, 186, 124, 0.1);
+   --main-color-select: rgb(128, 221, 190);
 }
 /* 🚁 Reset Css 🚁 */
 svg {

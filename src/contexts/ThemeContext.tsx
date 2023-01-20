@@ -20,9 +20,9 @@ export const ThemeContextProvider: React.FC<ThemeContextProviderType> = ({
    children,
 }) => {
    const [dataTheme, setDataTheme] = useLocalStorage("theme-data-app", {
-      themeMain: "theme-light",
+      themeBackground: "theme-light",
       themeColor: "theme-blue",
-      themeSize: "theme-size-14",
+      themeSize: "theme-size-16",
    });
 
    const onChangeTheme = (data: ParamsType) => {

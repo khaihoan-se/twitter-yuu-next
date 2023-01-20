@@ -22,7 +22,7 @@ const BaseLayout: React.FC<IBaseLaayoutType> = ({ children }) => {
                <div className="w-[990px] shrink grow flex flex-col">
                   <div className="grow flex flex-col">
                      <div className="bg-transparent items-stretch justify-between grow flex-row w-full min-h-full flex">
-                        <div className="max-w-[600px] w-full mr-0 ml-0 z-[1] border-r-[1px] border-l-[1px] bodert-tw-bd-layout bg-tw-bg-main-900 flex flex-col">
+                        <div className="max-w-[600px] w-full mr-0 ml-0 z-[1] border-tw-bd-layout border-r-[1px] border-l-[1px] bg-tw-bg-main-900 flex flex-col">
                            {children}
                         </div>
                         <PageRight />

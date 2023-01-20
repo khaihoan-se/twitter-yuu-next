@@ -1,17 +1,15 @@
-import BaseModal from "@/components/shared/BaseModal";
-import ModalCustomTheme from "@/components/templates/ModalCustomTheme";
-import React from "react";
+import CustomTheme from "@/components/templates/CustomTheme";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LoginContainer = () => {
    const { t } = useTranslation();
+   const [showModal, setShowModal] = useState<boolean>(false);
    return (
       <React.Fragment>
          <h1>LoginContainer</h1>
-         <div>{t("content")}</div>
-         <BaseModal open={true} type="center" classBg="bg-tw-bg-main-500">
-            <ModalCustomTheme />
-         </BaseModal>
+         <div onClick={() => setShowModal(true)}>{t("content")}</div>
+         <CustomTheme open={showModal} onClose={() => setShowModal(false)} />
       </React.Fragment>
    );
 };

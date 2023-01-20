@@ -3,11 +3,25 @@ export const ThemeMainList = [
       id: 1,
       type: "theme-light",
       color: "rgb(255, 255, 255)",
+      colorIcon: "rgb(185, 202, 211)",
+      colorText: "rgb(15, 20, 25)",
+      title: "titleLight",
+   },
+   {
+      id: 2,
+      type: "theme-dim",
+      color: "rgb(21, 32, 43)",
+      colorIcon: "rgb(92, 110, 126)",
+      colorText: "rgb(247, 249, 249)",
+      title: "titleDim",
    },
    {
       id: 2,
       type: "theme-dark",
       color: "rgb(0, 0, 0)",
+      colorIcon: "rgb(62, 65, 68)",
+      colorText: "rgb(231, 233, 234)",
+      title: "titleDark",
    },
 ];
 export const ThemeColorList = [
@@ -47,25 +61,30 @@ export const ThemeFrontSize = [
       id: 1,
       type: "theme-size-14",
       style: "calc(0% - 0px)",
+      active: "0",
    },
    {
       id: 2,
       type: "theme-size-15",
       style: "calc(25% - 4px)",
+      active: "0.25",
    },
    {
       id: 3,
       type: "theme-size-16",
       style: "calc(50% - 8px)",
+      active: "0.5",
    },
    {
       id: 4,
       type: "theme-size-17",
       style: "calc(75% - 12px)",
+      active: "0.75",
    },
    {
       id: 5,
       type: "theme-size-18",
       style: "calc(100% - 16px)",
+      active: "1",
    },
 ];

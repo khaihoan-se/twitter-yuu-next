@@ -24,6 +24,7 @@ const ModalBase = React.forwardRef<HTMLDivElement, ModalBaseProps>(
                      "fixed inset-0",
                      classBg ? classBg : "bg-transparent"
                   )}
+                  onClick={onClose}
                ></div>
                <div
                   className={classNames(

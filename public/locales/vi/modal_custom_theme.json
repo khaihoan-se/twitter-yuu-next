@@ -4,5 +4,9 @@
    "content": "Cốt lõi của Twitter là những tin nhắn ngắn gọi là Tweet — chẳng hạn như tin này — có thể bao gồm các ảnh, video, liên kết, văn bản, biểu tượng đánh dấu và các đề cập như ",
    "fontSize": "Cỡ phông",
    "color": "Màu sắc",
-   "background": "Màu nền"
+   "background": "Màu nền",
+   "titleLight": "Mặc định",
+   "titleDim": "Mờ tối",
+   "titleDark": "Tắt đèn",
+   "button": "Xong"
 }

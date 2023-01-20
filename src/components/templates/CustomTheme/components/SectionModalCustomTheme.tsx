@@ -15,7 +15,7 @@ const SectionModalCustomTheme: React.FC<SectionModalCustomThemeProps> = ({
             <Typography variant="span" label={label} />
          </div>
          <div className="bg-tw-bg-main-600 mb-3 rounded-2xl flex flex-col">
-            <div className="items-center flex-row p-4 flex">{children}</div>
+            <div className="items-center flex-row flex">{children}</div>
          </div>
       </React.Fragment>
    );
