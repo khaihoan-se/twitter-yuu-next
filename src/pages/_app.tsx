@@ -17,9 +17,6 @@ function App({ Component, pageProps }: NextPageWithLayoutProps) {
       // @ts-ignore
       Component.getLayout ||
       ((page: React.ReactNode) => <BaseLayout>{page}</BaseLayout>);
-   // return (
-   //    <ThemeProvider>{getLayout(<Component {...pageProps} />)}</ThemeProvider>
-   // );
    return (
       <ThemeContextProvider>
          {getLayout(<Component {...pageProps} />)}

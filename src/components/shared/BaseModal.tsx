@@ -24,13 +24,12 @@ const ModalBase = React.forwardRef<HTMLDivElement, ModalBaseProps>(
                      "fixed inset-0",
                      classBg ? classBg : "bg-transparent"
                   )}
-                  onClick={onClose}
                ></div>
                <div
                   className={classNames(
                      "pointer-events-auto absolute",
                      type === "center" &&
-                        "left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col",
+                        "left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col sm:w-[600px] w-full",
                      className
                   )}
                >

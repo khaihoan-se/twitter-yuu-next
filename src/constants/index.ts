@@ -1,3 +1,20 @@
+import BookmarkFillIcon from "@/assets/icons/BookmarkFillIcon";
+import BookmarkOutlineIcon from "@/assets/icons/BookmarkOutlineIcon";
+import ExploreFillIcon from "@/assets/icons/ExploreFillIcon";
+import ExploreOutlineIcon from "@/assets/icons/ExploreOutlineIcon";
+import HomeFillIcon from "@/assets/icons/HomeFillIcon";
+import HomeOutlineIcon from "@/assets/icons/HomeOutlineIcon";
+import ListFillIcon from "@/assets/icons/ListFillIcon";
+import ListOutlineIcon from "@/assets/icons/ListOutlineIcon";
+import MessageFillIcon from "@/assets/icons/MessageFillIcon";
+import MessageOutlineeIcon from "@/assets/icons/MessageOutlineIcon";
+import NotificationFillIcon from "@/assets/icons/NotificationFillIcon";
+import NotificationOutlineIcon from "@/assets/icons/NotificationOutlineIcon";
+import ProfileFillIcon from "@/assets/icons/ProfileFillIcon";
+import ProfileOutlineIcon from "@/assets/icons/ProfileOutlineIcon";
+import SetingFillIcon from "@/assets/icons/SetingFillIcon";
+import SetingIcon from "@/assets/icons/SetingOutlineIcon";
+
 export const ThemeMainList = [
    {
       id: 1,
@@ -86,5 +103,65 @@ export const ThemeFrontSize = [
       type: "theme-size-18",
       style: "calc(100% - 16px)",
       active: "1",
+   },
+];
+
+export const MENU_HEADER_LISTS = [
+   {
+      page: "Home",
+      path: "/home",
+      icon: HomeOutlineIcon,
+      activeIcon: HomeFillIcon,
+   },
+   {
+      page: "Explore",
+      path: "/explore",
+      icon: ExploreOutlineIcon,
+      activeIcon: ExploreFillIcon,
+   },
+   {
+      page: "Notifications",
+      path: "/notifications",
+      icon: NotificationOutlineIcon,
+      activeIcon: NotificationFillIcon,
+   },
+   {
+      page: "Messages",
+      path: "/messages",
+      icon: MessageOutlineeIcon,
+      activeIcon: MessageFillIcon,
+   },
+   {
+      page: "Bookmarks",
+      path: "/i/bookmarks",
+      icon: BookmarkOutlineIcon,
+      activeIcon: BookmarkFillIcon,
+   },
+   {
+      page: "Lists",
+      path: "/[username]/lists",
+      icon: ListOutlineIcon,
+      activeIcon: ListFillIcon,
+   },
+   {
+      page: "Profile",
+      path: "/[username]",
+      icon: ProfileOutlineIcon,
+      activeIcon: ProfileFillIcon,
+   },
+];
+
+export const MENU_HEADER_LISTS_AUTH = [
+   {
+      page: "Explore",
+      path: "/explore",
+      icon: ExploreOutlineIcon,
+      activeIcon: ExploreFillIcon,
+   },
+   {
+      page: "Settings",
+      path: "/settings/account/personalization",
+      icon: SetingIcon,
+      activeIcon: SetingFillIcon,
    },
 ];

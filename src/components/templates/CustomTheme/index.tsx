@@ -35,13 +35,13 @@ const ModalCustomTheme: React.FC<ModalCustomThemeProps> = ({
             type="center"
             classBg="bg-tw-bg-main-500"
          >
-            <div className="max-w-[80vw] max-h-[90vh] min-w-[600px] shrink rounded-2xl overflow-hidden flex flex-col">
-               <div className="shrink grow bg-tw-bg-main-900 rounded-2xl flex flex-col">
+            <div className="z-50 min-h-[400px] sm:max-w-[80vw] max-w-full sm:max-h-[90vh] max-h-[100vh] sm:h-[650px] h-[100vh] sm:min-w-[600px] min-w-[100%] shrink sm:rounded-2xl rounded-none overflow-hidden flex flex-col">
+               <div className="shrink grow bg-tw-bg-main-900 sm:rounded-2xl rounded-none flex flex-col">
                   <div className="max-w-[600px] shrink grow w-full mx-auto flex flex-col">
                      <div className="shrink grow overflow-auto flex flex-col">
                         {/* Title */}
-                        <div className="mt-[32px] mb-3 flex flex-col">
-                           <div className="text-tw-text-main text-[23px] leading-7 font-extrabold break-words min-w-0 text-center">
+                        <div className="sm:mt-[32px] mt-0 sm:mb-3 mb-0 flex flex-col">
+                           <div className="text-tw-text-main text-[23px] leading-7 font-extrabold break-words min-w-0 sm:text-center text-start">
                               <Typography variant="span" label={t("title")} />
                            </div>
                         </div>
@@ -79,7 +79,7 @@ const ModalCustomTheme: React.FC<ModalCustomThemeProps> = ({
                               <Button
                                  label={t("button")}
                                  backgroundColor="bg-tw-main-color-large"
-                                 colorText="#fff"
+                                 classLabel="text-[#ffff]"
                                  onClick={onClose}
                               />
                            </div>

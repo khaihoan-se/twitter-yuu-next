@@ -7,7 +7,7 @@ const BoxPostDetail = () => {
    const { t } = useTranslation("modal_custom_theme");
    return (
       <React.Fragment>
-         <div className="mb-4 mx-[32px] flex flex-col">
+         <div className="mb-4 sm:mx-[32px] mx-0 flex flex-col">
             <div className="border-tw-bd-layout rounded-2xl border-[1px] flex flex-col">
                <article className="px-4 py-3 flex-row overflow-hidden flex">
                   <div className="flex flex-col shrink grow">
